@@ -162,7 +162,7 @@ async def send_message(
                 content_type=ContentType.TEXT,
                 user_id=None,
                 is_admin=True,  # Allow system to post
-                model_name="gpt-4-turbo-preview",
+                model_name="gpt-4o-mini ",
             )
         except Exception as e:
             # Log the error but don't fail the request

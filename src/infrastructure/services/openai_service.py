@@ -9,7 +9,7 @@ from src.domain.entities.doctors import DoctorWithDetailsEntity
 class OpenAIService:
     def __init__(self, api_key: str):
         self._client = AsyncOpenAI(api_key=api_key)
-        self._model = "gpt-4-turbo-preview"
+        self._model = "gpt-4o-mini"
 
     def _format_doctors_for_prompt(self, doctors: list[DoctorWithDetailsEntity]) -> str:
         if not doctors:
